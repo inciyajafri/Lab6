@@ -36,6 +36,14 @@
   <h2 id="textoutput" class="center">Show results here</h2>
   </div>
   <script type="text/javascript">
+    var buttonId = document.getElementById("entrybutton")
+    buttonId.addEventListener("click", onClick);
+    function onClick()
+    {
+    var inputContent = document.getElementById("entryinput").value;
+    alert("Inciya Jafri " + inputContent )
+    document.getElementById("textoutput").innerHTML = inputContent;
+    }
   </script>
 </body>
 </html>
